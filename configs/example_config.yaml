@@ -1,0 +1,27 @@
+# Path to input file
+mc_input_path:
+
+# Read hdf5 file or pickled data file
+is_hdf5: True
+
+# Example cuts.
+# Keys = Keys in DataFrame
+# First: Cut value
+# Second: Cut option ["greater_than", "less_than", "equal_to", "unequal_to"]
+cuts: {
+  "scores": [0.99, "greater_than"], # Examples
+  "zenith": [80, "less_than"],
+}
+
+# Columns to save in root file
+columns: [
+  "energy", # Examples
+  "zenith",
+]
+
+# Filter zeros in these keys. 
+check_zero: []
+
+# Output options
+output_path: 
+output_file:
